@@ -1,0 +1,13 @@
+---
+title: "Welcome"
+author: "Leslie Rutkowski"
+format: html
+---
+
+## Welcome!
+
+This is a repository for a bunch of solutions that I have developed to solve specific issues that I am tackling in my work with international large-scale assessment (ILSA) data. If you are here, you probably know that these data have several idiosyncrasies including the sampling and assessment designs, both of which necessitate specialized treatment (i.e., you can't just plug these data into your favorite analysis tool and produce statistics willy-nilly).
+
+This is a living document that I will try, to the best of my ability and available time, to update with tools (mostly R functions and code) that I find useful.
+
+If you find errors or areas for improvement, I welcome your feedback. 

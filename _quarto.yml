@@ -1,0 +1,17 @@
+project:
+  type: website
+
+website:
+  title: "Data Solutions for ILSA"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: tools.qmd
+        text: Tools
+      - href: about.qmd
+        text: About
+format:
+  html:
+    theme: cosmo
+    toc: true

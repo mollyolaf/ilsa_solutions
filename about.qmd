@@ -1,0 +1,13 @@
+---
+title: "About Me"
+author: "Leslie Rutkowski"
+format: html
+---
+
+## About Me
+
+I am a professor of quantitative research methodology at [Indiana University](https://www.nytimes.com/2025/06/05/us/republicans-indiana-public-universities.html). In this position, I conduct methodological research in the enormous playground of international large-scale assessment (ILSA). You can see my [Google Scholar page](https://scholar.google.com/citations?user=Wxw6x9MAAAAJ&hl=en) for details on my recent and most cited publications.
+
+I teach courses in social science statistics, including latent variable modeling, multilevel modeling, categorical data analysis, and, occasionally, a course on missing data analysis. I am also very interested in assessment design, especially across countries, and how we can model and compare scores on tests of common domains like math, science, and reading.
+
+In addition to my research and teaching duties, I serve in a number of international and national roles. These include chair of the PISA Technical Advisory Group (since 2020), a member of the IEA's Technical Executive Group (since 2024), and as chair of the US NAEP Questionnaire Standing Committee (since 2018. Or at least I *think* I still do. Does it still exist? I actually don't know. But let's just say no one fired me from this role. Or at least, they didn't *tell* me my services are no longer needed).

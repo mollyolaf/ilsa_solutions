@@ -11,3 +11,5 @@ This is a repository for a bunch of solutions that I have developed to solve spe
 This is a living document that I will try, to the best of my ability and available time, to update with tools (mostly R functions and code) that I find useful.
 
 If you find errors or areas for improvement, I welcome your feedback. 
+
+adding a little line that we'll delete

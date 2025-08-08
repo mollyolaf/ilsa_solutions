@@ -12,4 +12,3 @@ This is a living document that I will try, to the best of my ability and availab
 
 If you find errors or areas for improvement, I welcome your feedback. 
 
-adding a little line that we'll delete

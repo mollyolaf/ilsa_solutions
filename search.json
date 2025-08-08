@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "This is a repository for a bunch of solutions that I have developed to solve specific issues that I am tackling in my work with international large-scale assessment (ILSA) data. If you are here, you probably know that these data have several idiosyncrasies including the sampling and assessment designs, both of which necessitate specialized treatment (i.e., you can’t just plug these data into your favorite analysis tool and produce statistics willy-nilly).\nThis is a living document that I will try, to the best of my ability and available time, to update with tools (mostly R functions and code) that I find useful.\nIf you find errors or areas for improvement, I welcome your feedback."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Welcome",
+    "section": "",
+    "text": "This is a repository for a bunch of solutions that I have developed to solve specific issues that I am tackling in my work with international large-scale assessment (ILSA) data. If you are here, you probably know that these data have several idiosyncrasies including the sampling and assessment designs, both of which necessitate specialized treatment (i.e., you can’t just plug these data into your favorite analysis tool and produce statistics willy-nilly).\nThis is a living document that I will try, to the best of my ability and available time, to update with tools (mostly R functions and code) that I find useful.\nIf you find errors or areas for improvement, I welcome your feedback."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "I am a professor of quantitative research methodology at Indiana University. In this position, I conduct methodological research in the enormous playground of international large-scale assessment (ILSA). You can see my Google Scholar page for details on my recent and most cited publications.\nI teach courses in social science statistics, including latent variable modeling, multilevel modeling, categorical data analysis, and, occasionally, a course on missing data analysis. I am also very interested in assessment design, especially across countries, and how we can model and compare scores on tests of common domains like math, science, and reading.\nIn addition to my research and teaching duties, I serve in a number of international and national roles. These include chair of the PISA Technical Advisory Group (since 2020), a member of the IEA’s Technical Executive Group (since 2024), and as chair of the US NAEP Questionnaire Standing Committee (since 2018. Or at least I think I still do. Does it still exist? I actually don’t know. But let’s just say no one fired me from this role. Or at least, they didn’t tell me my services are no longer needed)."
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About Me",
+    "section": "",
+    "text": "I am a professor of quantitative research methodology at Indiana University. In this position, I conduct methodological research in the enormous playground of international large-scale assessment (ILSA). You can see my Google Scholar page for details on my recent and most cited publications.\nI teach courses in social science statistics, including latent variable modeling, multilevel modeling, categorical data analysis, and, occasionally, a course on missing data analysis. I am also very interested in assessment design, especially across countries, and how we can model and compare scores on tests of common domains like math, science, and reading.\nIn addition to my research and teaching duties, I serve in a number of international and national roles. These include chair of the PISA Technical Advisory Group (since 2020), a member of the IEA’s Technical Executive Group (since 2024), and as chair of the US NAEP Questionnaire Standing Committee (since 2018. Or at least I think I still do. Does it still exist? I actually don’t know. But let’s just say no one fired me from this role. Or at least, they didn’t tell me my services are no longer needed)."
+  }
+]

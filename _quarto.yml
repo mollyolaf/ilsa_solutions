@@ -9,7 +9,7 @@ website:
         href: index.qmd
       - text: "Blog" 
         href: blog.qmd
-      - text: "About Your Butt"
+      - text: "About"
         href: about.qmd
 
 format:

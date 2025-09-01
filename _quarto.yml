@@ -7,7 +7,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: blog.qmd
+      - href: blog.html
         text: Blog
       - href: about.qmd
         text: About
@@ -15,4 +15,4 @@ website:
 format:
   html:
     theme: cosmo
-    toc: true
+    toc: true 

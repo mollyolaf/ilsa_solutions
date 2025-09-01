@@ -1,17 +1,17 @@
 project:
   type: website
-
 website:
   title: "Data Solutions for ILSA"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
       - blog.qmd
+      - href: blog.qmd
+        text: Blog
       - href: about.qmd
         text: About
-
 format:
   html:
     theme: cosmo
-    toc: true 
+    toc: true

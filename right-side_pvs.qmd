@@ -1,0 +1,25 @@
+---
+title: "Right-Side PVs and Benchmarks"
+date: "2025-09-01"
+author: "Leslie Rutkowski"
+---
+
+# Putting PVs and Benchmarks on the Right-Hand Side in WeMix
+
+Here, I'm sharing an R script that serves as a wrapper for WeMix. The point is to be able to put PVs (and benchmarks) on the right-hand side of the equation, rather than the left-hand side where they normally are as response variables.
+
+This function also conducts analysis by-group (by country in the analysis that I did). 
+
+There are use examples at the end. 
+
+## What The Script Does
+
+- Wraps around WeMix to fit multilevel models where the PVs and/or benchmarks IVs
+- Pools results using Rubin's (1987) rules for multiple imputation
+
+## Complete R Script
+
+**Download the full analysis:** [right-side-pvs-analysis.R](right-side-pvs-analysis.R)
+
+
+

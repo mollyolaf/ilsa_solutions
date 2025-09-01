@@ -1,6 +1,4 @@
 ---
-title: "Blog"
+title: "blog"
 editor: visual
 ---
-
-Here is where I'll be dumping my R scripts and tools. Check in periodically for updates. 

@@ -6,7 +6,6 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - blog.qmd
       - href: blog.qmd
         text: Blog
       - href: about.qmd

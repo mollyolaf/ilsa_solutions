@@ -9,7 +9,7 @@ website:
       - href: blog.qmd
         text: Blog
       - href: about.qmd
-        text: About
+        text: About your butt
 format:
   html:
     theme: cosmo

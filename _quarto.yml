@@ -11,6 +11,8 @@ website:
         href: blog.qmd
       - text: "About"
         href: about.qmd
+    resources: 
+     - "*.R"
 
 format:
   html:

@@ -19,7 +19,7 @@ There are use examples at the end.
 
 ## Complete R Script
 
-**Download the full analysis:** [right-side-pvs-analysis.R](right-side-pvs-analysis.R)
+**Download the full analysis:** [fit_wemix_by_group_pv_v11.R](https://raw.githubusercontent.com/mollyolaf/ilsa_solutions/main/fit_wemix_by_group_pv_v11.R)
 
 
 

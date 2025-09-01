@@ -1,4 +1,13 @@
 ---
-title: "blog"
-editor: visual
+title: "ILSA Solutions Blog"
 ---
+
+# Blog Posts
+
+## Recent Posts
+
+- [Right-Side PVs and Benchmarks](right-side_pvs.qmd) - September 1, 2025
+
+## Archive
+
+More posts coming soon!

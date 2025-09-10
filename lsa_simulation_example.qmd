@@ -1,0 +1,22 @@
+---
+title: "lsa simulation example"
+author: "Leslie Rutkowski"
+date: "September 10, 2025"
+format: html
+editor: visual
+---
+
+## A More Than Basic Simulation Example
+
+Here is an R script that shows how I simulated a single-group's (e.g., country) ILSA responses. I used the R package [*lsasim*](https://largescaleassessmentsineducation.springeropen.com/articles/10.1186/s40536-018-0068-8). There are 3 correlated domains (i.e., math, reading, science) and several *background* variables that have different scales (continuous, ordinal, and binary) and that have different correlations with $\theta$ and with each other. 
+
+I also generated items by domain with specified distributions. Then, these items were assembled into blocks, which were assigned to booklets/forms. These simulated forms were then distributed in a random fashion to each simulated examinee. This, generally, follows non-adaptive ILSA administration.I also process the background variables via a principal component analysis, which also generally follows ILSA operational procedures.  
+
+I set all of this up in a loop and repeated the process 100 times for stability. You'll notice that in step 1, where I set up the generating parameters, these values are fixed over replications. But all the draws from these generating parameters are random (but replicable if you use the same seed - see line 86).
+
+Everything is saved in a list in this simulation, including all simulated item parameters and response data per replication along with the generating parameters. 
+
+I've commented the code so that I *think* it's readable. Let me know if you have suggestions for improvements. 
+## Complete R Script
+
+**Download the full script:** [lsa data generation x 100.R](https://raw.githubusercontent.com/mollyolaf/ilsa_solutions/main/lsa data generation x 100.R)

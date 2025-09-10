@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Leslie Rutkowski">
+<meta name="dcterms.date" content="2025-09-01">
 
-<title>ILSA Solutions Blog – Data Solutions for ILSA</title>
+<title>Right-Side PVs and Benchmarks – Data Solutions for ILSA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
@@ -116,10 +118,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#blog-posts" id="toc-blog-posts" class="nav-link active" data-scroll-target="#blog-posts">Blog Posts</a>
+  <li><a href="#putting-pvs-and-benchmarks-on-the-right-hand-side-in-wemix" id="toc-putting-pvs-and-benchmarks-on-the-right-hand-side-in-wemix" class="nav-link active" data-scroll-target="#putting-pvs-and-benchmarks-on-the-right-hand-side-in-wemix">Putting PVs and Benchmarks on the Right-Hand Side in WeMix</a>
   <ul class="collapse">
-  <li><a href="#recent-posts" id="toc-recent-posts" class="nav-link" data-scroll-target="#recent-posts">Recent Posts</a></li>
-  <li><a href="#archive" id="toc-archive" class="nav-link" data-scroll-target="#archive">Archive</a></li>
+  <li><a href="#what-the-script-does" id="toc-what-the-script-does" class="nav-link" data-scroll-target="#what-the-script-does">What The Script Does</a></li>
+  <li><a href="#complete-r-script" id="toc-complete-r-script" class="nav-link" data-scroll-target="#complete-r-script">Complete R Script</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -129,14 +131,26 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ILSA Solutions Blog</h1>
+<h1 class="title">Right-Side PVs and Benchmarks</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Leslie Rutkowski </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 1, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -146,18 +160,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="blog-posts" class="level1">
-<h1>Blog Posts</h1>
-<section id="recent-posts" class="level2">
-<h2 class="anchored" data-anchor-id="recent-posts">Recent Posts</h2>
+<section id="putting-pvs-and-benchmarks-on-the-right-hand-side-in-wemix" class="level1">
+<h1>Putting PVs and Benchmarks on the Right-Hand Side in WeMix</h1>
+<p>Here, I’m sharing an R script that serves as a wrapper for WeMix. The point is to be able to put PVs (and benchmarks) on the right-hand side of the equation, rather than the left-hand side where they normally are as response variables.</p>
+<p>This function also conducts analysis by-group (by country in the analysis that I did).</p>
+<p>There are use examples at the end.</p>
+<section id="what-the-script-does" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-script-does">What The Script Does</h2>
 <ul>
-<li><a href="./right-side_pvs.html">Right-Side PVs and Benchmarks</a> - September 1, 2025</li>
-<li><a href="./lsa_simulation_example.html">Exampe of ILSA Data Simulation</a> - September 10, 2025</li>
+<li>Wraps around WeMix to fit multilevel models where the PVs and/or benchmarks IVs</li>
+<li>Pools results using Rubin’s (1987) rules for multiple imputation</li>
 </ul>
 </section>
-<section id="archive" class="level2">
-<h2 class="anchored" data-anchor-id="archive">Archive</h2>
-<p>More posts coming soon!</p>
+<section id="complete-r-script" class="level2">
+<h2 class="anchored" data-anchor-id="complete-r-script">Complete R Script</h2>
+<p><strong>Download the full analysis:</strong> <a href="https://raw.githubusercontent.com/mollyolaf/ilsa_solutions/main/fit_wemix_by_group_pv_v11.R">fit_wemix_by_group_pv_v11.R</a></p>
 
 
 </section>

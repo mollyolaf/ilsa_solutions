@@ -6,7 +6,8 @@ title: "ILSA Solutions Blog"
 
 ## Recent Posts
 
-- [Right-Side PVs and Benchmarks](right-side_pvs.qmd) - September 1, 2025
+-   [Right-Side PVs and Benchmarks](right-side_pvs.qmd) - September 1, 2025
+-   [Exampe of ILSA Data Simulation](lsa_simulation_example.qmd) - September 10, 2025
 
 ## Archive
 

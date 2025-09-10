@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Leslie Rutkowski">
+<meta name="dcterms.date" content="2025-09-10">
 
-<title>ILSA Solutions Blog – Data Solutions for ILSA</title>
+<title>lsa simulation example – Data Solutions for ILSA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -93,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
@@ -116,11 +147,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#blog-posts" id="toc-blog-posts" class="nav-link active" data-scroll-target="#blog-posts">Blog Posts</a>
-  <ul class="collapse">
-  <li><a href="#recent-posts" id="toc-recent-posts" class="nav-link" data-scroll-target="#recent-posts">Recent Posts</a></li>
-  <li><a href="#archive" id="toc-archive" class="nav-link" data-scroll-target="#archive">Archive</a></li>
-  </ul></li>
+  <li><a href="#a-more-than-basic-simulation-example" id="toc-a-more-than-basic-simulation-example" class="nav-link active" data-scroll-target="#a-more-than-basic-simulation-example">A More Than Basic Simulation Example</a></li>
   </ul>
 </nav>
     </div>
@@ -129,14 +156,26 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ILSA Solutions Blog</h1>
+<h1 class="title">lsa simulation example</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Leslie Rutkowski </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 10, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -146,21 +185,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="blog-posts" class="level1">
-<h1>Blog Posts</h1>
-<section id="recent-posts" class="level2">
-<h2 class="anchored" data-anchor-id="recent-posts">Recent Posts</h2>
-<ul>
-<li><a href="./right-side_pvs.html">Right-Side PVs and Benchmarks</a> - September 1, 2025</li>
-<li><a href="./lsa_simulation_example.html">Exampe of ILSA Data Simulation</a> - September 10, 2025</li>
-</ul>
-</section>
-<section id="archive" class="level2">
-<h2 class="anchored" data-anchor-id="archive">Archive</h2>
-<p>More posts coming soon!</p>
+<section id="a-more-than-basic-simulation-example" class="level2">
+<h2 class="anchored" data-anchor-id="a-more-than-basic-simulation-example">A More Than Basic Simulation Example</h2>
+<p>Here is an R script that shows how I simulated a single-group’s (e.g., country) ILSA responses. I used the R package <a href="https://largescaleassessmentsineducation.springeropen.com/articles/10.1186/s40536-018-0068-8"><em>lsasim</em></a>. There are 3 correlated domains (i.e., math, reading, science) and several <em>background</em> variables that have different scales (continuous, ordinal, and binary) and that have different correlations with <span class="math inline">\(\theta\)</span> and with each other.</p>
+<p>I also generated items by domain with specified distributions. Then, these items were assembled into blocks, which were assigned to booklets/forms. These simulated forms were then distributed in a random fashion to each simulated examinee. This, generally, follows non-adaptive ILSA administration.I also process the background variables via a principal component analysis, which also generally follows ILSA operational procedures.</p>
+<p>I set all of this up in a loop and repeated the process 100 times for stability. You’ll notice that in step 1, where I set up the generating parameters, these values are fixed over replications. But all the draws from these generating parameters are random (but replicable if you use the same seed - see line 86).</p>
+<p>Everything is saved in a list in this simulation, including all simulated item parameters and response data per replication along with the generating parameters.</p>
+<p>I’ve commented the code so that I <em>think</em> it’s readable. Let me know if you have suggestions for improvements. ## Complete R Script</p>
+<p><strong>Download the full script:</strong> <a href="https://raw.githubusercontent.com/mollyolaf/ilsa_solutions/main/lsa%20data%20generation%20x%20100.R">lsa data generation x 100.R</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
